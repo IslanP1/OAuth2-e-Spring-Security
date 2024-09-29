@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: aula-seguranca-auth
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432
+    username:
+    password:
+    driver-class-name: org.postgresql.Driver
+
+  security:
+    user:
+      name:
+      password:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id:
+            client-secret:
+      resourceserver:
+        jwt:
+          issuer-uri: https://accounts.google.com
+
